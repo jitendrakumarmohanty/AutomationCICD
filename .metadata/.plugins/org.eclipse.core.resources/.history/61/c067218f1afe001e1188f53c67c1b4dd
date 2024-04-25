@@ -1,0 +1,18 @@
+package javatestproject;
+
+import static io.restassured.RestAssured.given;
+
+import io.restassured.RestAssured;
+import io.restassured.RestAssured.*;
+
+
+
+
+public class SerializationBody {
+	
+	
+	public void serializeAddPlaceBody() {
+	RestAssured.baseURI="";
+	
+	}
+}

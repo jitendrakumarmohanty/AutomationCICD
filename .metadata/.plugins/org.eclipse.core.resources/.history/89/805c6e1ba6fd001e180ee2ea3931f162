@@ -1,0 +1,38 @@
+package javatestproject;
+
+public class getcourse {
+	
+	
+	private String instructor;
+	private String url;
+	private String services;
+	private String expertise;
+	
+	public String getInstructor() {
+		return instructor;
+	}
+	
+	public void setInstructor(String instructor) {
+		this.instructor=instructor;
+	}
+	
+	public String getUrl() {
+		return url;
+	}
+	
+	public void setUrl(String url) {
+		this.url=url;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+	
+	public void setservices(String services) {
+		this.services=services;
+	}
+
+	
+	
+	
+}

@@ -1,0 +1,35 @@
+package javatestproject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AddAddressJackson {
+	
+	public void AddAddress() {
+
+	AddAddressPOJO add=new AddAddressPOJO();
+	add.setAccuracy("909011909011");
+	Address adr=new Address();
+	adr.setCity("Newark");
+	adr.setPinCode("10001-0091");
+	adr.setRoad("Akbar road");
+	adr.setState("CA");
+	
+	add.setAddress(adr);
+	add.setLanguage("English-EN");
+	
+	List<Phones> phs =new ArrayList<Phones>();
+	
+	Phones ph=new Phones();
+	ph.setPhoneNumber("989-098-7650");
+	ph.setPresentAt("pxxx");
+	
+	
+	
+	add.setPhones(null);
+	
+	
+	add.setTypes(null);
+	add.setWebsite("https://www.yahoo.co.in");
+	}
+}

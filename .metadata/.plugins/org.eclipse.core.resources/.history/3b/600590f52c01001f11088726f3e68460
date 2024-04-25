@@ -1,0 +1,17 @@
+
+package prameterexamples;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class TestParameterXML {
+	
+	@Parameters({"userid","password"})
+	@Test
+	public void doLogin(String userid,String userid) {
+		
+		System.out.println("userID:>>>>>>"+userid+"Pwd :>>>>>>>>>"+userid);
+		
+	}
+
+}

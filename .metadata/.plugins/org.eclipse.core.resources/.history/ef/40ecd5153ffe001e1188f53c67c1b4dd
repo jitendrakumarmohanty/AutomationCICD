@@ -1,0 +1,53 @@
+package javatestproject;
+
+import static io.restassured.RestAssured.given;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.RestAssured.*;
+
+
+
+
+public class SerializationBody {
+	
+	@Test
+	public void serializeAddPlaceBody() {
+		
+		  AddLocationPojo al = new AddLocationPojo();
+		  al.setAccuracy(5050);
+		  al.setAddress("2010, side layout, cohen 09000");
+		  al.setLanguage("French-FN");
+		  al.setWebsite("http://google.com");
+		  al.setPhone_number("(+91) 983 893 3937");
+		  al.setName("Frontline house");
+		  List<String> typs=new ArrayList<String>();
+		  typs.add("shoe park");
+		  typs.add("New rack");
+		  al.setTypes(typs);
+		  LocationDetails ld=new LocationDetails();
+		  ld.setLat(-38.38349433);
+		  ld.setLng(33.42736234);
+		  al.setLocation(ld);
+		  
+		  
+		
+		 RestAssured.baseURI="https://rahulshettyacademy.com/";
+		 
+		 
+		 String res=given().log().all()
+		.queryParam("key","qaclick123")
+		.body(al)
+		.when()
+		.post("/maps/api/place/add/json")
+		.then().extract().asString();
+		 
+		 System.out.println(res);
+		
+		
+	}
+}

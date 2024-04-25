@@ -1,0 +1,21 @@
+package javatestproject;
+
+public class AddAddressJackson {
+	
+	public void AddAddress() {
+
+	AddAddressPOJO add=new AddAddressPOJO();
+	add.setAccuracy("909011909011");
+	Address adr=new Address();
+	adr.setCity("Newark");
+	adr.setPinCode("10001-0091");
+	adr.setRoad("Akbar road");
+	adr.setState("CA");
+	
+	add.setAddress(adr);
+	add.setLanguage("English-EN");
+	add.setPhones(null);
+	add.setTypes(null);
+	add.setWebsite("https://www.yahoo.co.in");
+	}
+}

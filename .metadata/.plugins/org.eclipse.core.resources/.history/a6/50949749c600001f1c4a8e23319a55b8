@@ -1,0 +1,17 @@
+package javatestproject;
+
+public class AddAddressJackson {
+	
+	public void AddAddress() {
+
+	AddAddressPOJO add=new AddAddressPOJO();
+	add.setAccuracy("909011909011");
+	Address adr=new Address();
+	
+	add.setAddress(null);
+	add.setLanguage("English-EN");
+	add.setPhones(null);
+	add.setTypes(null);
+	add.setWebsite("https://www.yahoo.co.in");
+	}
+}

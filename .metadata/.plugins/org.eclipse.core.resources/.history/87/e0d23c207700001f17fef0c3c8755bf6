@@ -1,0 +1,46 @@
+package javatestproject;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+public class SerializationJSON {
+	
+	
+	@Test
+	void SerializeUsingSimpleJson() {
+		
+	JSONObject jo=new JSONObject();
+	
+	jo.put("accuracy", 909011);
+	jo.put("website", "https://www.google.com");
+	jo.put("language", "French-FN");
+	
+	JSONArray type=new JSONArray();
+	
+	types.add("shoe park1");
+	types.add("shoe park2");
+	
+	jo.put("types", type);
+	
+	
+	// LinkedHashMap is created for address data 
+    Map<String,String> addressMap = new LinkedHashMap<String,String>(4); 
+    addressMap.put("road", "MG Road Cross cut Street"); 
+    addressMap.put("city", "Bangalore"); 
+    addressMap.put("state", "Karnataka"); 
+    addressMap.put("pinCode", "560064"); 
+	
+	jo.put("address", addressMap)
+	
+	System.out.println(jo.toJSONString());
+		
+		
+		
+		
+	}
+
+}

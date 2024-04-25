@@ -1,0 +1,13 @@
+
+package prameterexamples;
+
+public class TestParameterXML {
+	
+	@Test
+	public void doLogin(String userId,String pwd) {
+		
+		System.out.println("userID:>>>>>>"+userId+"Pwd :>>>>>>>>>"+pwd);
+		
+	}
+
+}

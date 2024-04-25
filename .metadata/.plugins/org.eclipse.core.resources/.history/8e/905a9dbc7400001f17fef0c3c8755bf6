@@ -1,0 +1,16 @@
+package javatestproject;
+
+public class SerializationJSON {
+	
+	
+	@Test
+	void SerializeUsingSimpleJson() {
+		
+		
+		
+		
+		
+		
+	}
+
+}

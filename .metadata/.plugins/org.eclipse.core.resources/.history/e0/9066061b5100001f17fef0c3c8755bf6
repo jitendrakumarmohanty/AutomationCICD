@@ -1,0 +1,60 @@
+package javatestproject;
+
+import static io.restassured.RestAssured.given;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.RestAssured.*;
+
+
+
+
+public class SerializationBody {
+	
+	@Test
+	public void serializeAddPlaceBody() throws ParseException {
+		
+		  AddLocationPojo al = new AddLocationPojo();
+		  al.setAccuracy(9090);
+		  al.setAddress("0909, side layout, cohen 09000");
+		  al.setLanguage("French-FN");
+		  al.setWebsite("http://google.com");
+		  al.setPhone_number("(+91) 983 893 3997");
+		  al.setName("Frontline 66house");
+		  List<String> typs=new ArrayList<String>();
+		  typs.add("shoe park");
+		  typs.add("New rack");
+		  al.setTypes(typs);
+		  LocationDetails ld=new LocationDetails();
+		  ld.setLat(-38.383433);
+		  ld.setLng(33.427364);
+		  al.setLocation(ld);
+		  
+		  
+		
+		 RestAssured.baseURI="https://rahulshettyacademy.com/";
+		 
+		 
+		 String res=given().log().all()
+		.queryParam("key","qaclick123")
+		.body(al)
+		.when()
+		.post("/maps/api/place/add/json")
+		.then().extract().asString();
+		 
+		// System.out.println(res);
+		 
+		 JSONParser jp = new JSONParser();		
+		Object jo =jp.parse(res);
+		JSONObject jb=(JSONObject)jo;
+		System.out.println(jb+"test");
+		
+	}
+}

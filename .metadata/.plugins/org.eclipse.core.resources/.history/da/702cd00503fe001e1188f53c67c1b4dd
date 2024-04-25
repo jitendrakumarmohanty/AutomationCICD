@@ -1,0 +1,51 @@
+package javatestproject;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+
+
+public class getcourse {
+	
+	@JsonIgnore
+	private String instructor;
+	@JsonIgnore
+	private String url;
+	private String services;
+	private String expertise;
+	
+	public String getInstructor() {
+		return instructor;
+	}
+	
+	public void setInstructor(String instructor) {
+		this.instructor=instructor;
+	}
+    @JsonIgnore
+	public String getUrl() {
+		return url;
+	}
+	
+	public void setUrl(String url) {
+		this.url=url;
+	}
+
+	public String getservices() {
+		return services;
+	}
+	
+	public void setservices(String services) {
+		this.services=services;
+	}
+
+	
+	public String getexpertise() {
+		return expertise;
+	}
+	
+	public void setexpertise(String instructor) {
+		this.expertise=expertise;
+	}
+	
+	
+	
+}

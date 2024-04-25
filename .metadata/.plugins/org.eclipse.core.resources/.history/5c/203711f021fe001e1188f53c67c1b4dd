@@ -1,0 +1,36 @@
+package javatestproject;
+
+import static io.restassured.RestAssured.given;
+
+import io.restassured.RestAssured;
+import io.restassured.RestAssured.*;
+
+
+
+
+public class SerializationBody {
+	
+	public void serializeAddPlaceBody() {
+		
+		  AddLocationPojo al = new AddLocationPojo();
+		  al.setAccuracy(5050);
+		  al.setAddress("2010, side layout, cohen 09000");
+		  al.setLanguage("French-FN");
+		  al.setWebsite("http://google.com");
+		  al.setPhone_number("(+91) 983 893 3937");
+		  al.setName("Frontline house");
+		  
+		  
+		  
+		
+		RestAssured.baseURI="https://rahulshettyacademy.com/";
+
+		given().queryParam("key","qaclick123")
+		.body("")
+		.when()
+		.post("/maps/api/place/add/json")
+		.then().as();
+		
+		
+	}
+}

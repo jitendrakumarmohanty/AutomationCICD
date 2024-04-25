@@ -1,0 +1,13 @@
+package javatestproject;
+
+public class getcourse {
+	
+	
+	private String instructor;
+	private String url;
+	private String services;
+	private String projectSupport;
+
+
+	
+}

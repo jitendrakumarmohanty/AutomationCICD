@@ -1,0 +1,13 @@
+package prameterexamples;
+
+public class ParallelTest {
+
+	
+	@Test
+	public void doLogin() {
+		
+		System.out.println("Running parallely");
+	}
+	
+	
+}

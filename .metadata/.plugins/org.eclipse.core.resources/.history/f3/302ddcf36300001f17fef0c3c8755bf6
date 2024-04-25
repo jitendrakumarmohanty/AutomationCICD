@@ -1,0 +1,19 @@
+package javatestproject;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class DeserializeOfJson {
+	
+	
+	String res=
+	"{\"location\":{\"lat\":-38.383433,\"lng\":33.427364},\"accuracy\":909110,\"name\":\"Frontline 66house\",\"phone_number\":\"(+91) 983 893 3995\",\"address\":\"0909, side layout, cohen 09000\",\"types\":[\"shoe park1\",\"New rack1\"],\"website\":\"http://google.com\",\"language\":\"French-FN\"}\r\n"
+			+ "";
+	
+	JSONParser jp = new JSONParser();		
+	Object jo =jp.parse(res);
+	JSONObject jb=(JSONObject)jo;
+	System.out.println((String)jb.get("website")+"Hello");
+	
+
+}

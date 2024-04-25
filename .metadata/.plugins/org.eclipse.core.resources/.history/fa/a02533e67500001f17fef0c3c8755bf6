@@ -1,0 +1,23 @@
+package javatestproject;
+
+import org.json.simple.JSONObject;
+import org.testng.annotations.Test;
+
+public class SerializationJSON {
+	
+	
+	@Test
+	void SerializeUsingSimpleJson() {
+		
+	JSONObject jo=new JSONObject();
+	jo.put("accuracy", 909011);
+	jo.put("website", "https://www.google.com");
+	jo.put("language": "French-FN");
+	
+		
+		
+		
+		
+	}
+
+}

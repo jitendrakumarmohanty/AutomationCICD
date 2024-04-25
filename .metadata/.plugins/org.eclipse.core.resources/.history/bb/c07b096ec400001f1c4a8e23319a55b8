@@ -1,0 +1,9 @@
+package javatestproject;
+
+public class AddAddressJackson {
+
+	
+	AddAddressPOJO add=new AddAddressPOJO();
+	
+	
+}

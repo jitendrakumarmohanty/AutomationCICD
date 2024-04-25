@@ -1,0 +1,15 @@
+package javatestproject;
+
+import java.util.List;
+
+public class AddAddressPOJO {
+	
+	
+	private String website;
+	private String accuracy;
+	private String language;
+	private List<String> types;
+	private Adddress Address;
+	private List<Phones> phones;
+	
+}

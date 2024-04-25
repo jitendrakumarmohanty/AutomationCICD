@@ -1,0 +1,26 @@
+package prameterexamples;
+
+import java.util.Date;
+
+import org.testng.annotations.Test;
+
+public class ParallelTest {
+
+	
+	@Test
+	public void doLogin() {
+		
+		Date d=new Date();
+		System.out.println("Login Running parallely"+d.getTime());
+	}
+	
+	
+	@Test
+	public void doReg() {
+		Date d=new Date();
+		System.out.println("Reg Running parallely "+d.getTime());
+	}
+	
+	
+	
+}

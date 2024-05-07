@@ -18,7 +18,7 @@ import io.restassured.RestAssured;
 import io.restassured.RestAssured.*;
 
 
-
+//body
 
 public class APIBodyJACKSON {
 	

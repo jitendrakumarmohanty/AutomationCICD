@@ -10,8 +10,6 @@ steps{
 echo 'Build software.................'
  }
 }
-
-
 stage('Deploy'){
 
 steps{

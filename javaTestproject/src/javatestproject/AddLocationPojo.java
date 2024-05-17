@@ -3,7 +3,7 @@ package javatestproject;
 import java.util.List;
 
 public class AddLocationPojo {
-	
+//test	
 	
 	private LocationDetails location;
 	private int accuracy;

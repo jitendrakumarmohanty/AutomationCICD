@@ -18,7 +18,7 @@ import io.restassured.RestAssured;
 import io.restassured.RestAssured.*;
 
 
-//body json test
+//ggbody json test
 
 public class APIBodyJACKSON {
 	

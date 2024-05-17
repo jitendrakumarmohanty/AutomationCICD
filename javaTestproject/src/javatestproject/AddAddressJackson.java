@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-//address updated   ; jj  kk
+//address updated  jj  kk
 public class AddAddressJackson {
 	
 	@Test
